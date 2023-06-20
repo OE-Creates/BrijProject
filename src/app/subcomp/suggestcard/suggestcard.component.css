@@ -1,6 +1,7 @@
 .suggestcard{
     background-color: #203354;
     min-width: 200px;
+    max-width: 200px;
     height: 100%;
     margin-left: 5px;
     margin-right: 5px;
