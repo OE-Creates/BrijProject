@@ -11,7 +11,7 @@ export class GetMoviesService {
   constructor(private http: HttpClient) { }
 
   private apiNewUrl = "https://moviesdatabase.p.rapidapi.com/titles/x/upcoming?page="
-  private apiSearchUrl = "http://www.omdbapi.com?s="
+  private apiSearchUrl = "https://www.omdbapi.com?s="
   private apiSearchUrlSuffix = "&apikey=f91ddec1"
 
   fetchNewMovies(): Observable<Page>{
