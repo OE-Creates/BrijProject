@@ -1,0 +1,11 @@
+<div class="moviecard">
+    <div class="moviecard_img">
+        <img src="{{(Movie.primaryImage | filterimage).url}}" alt="" style="border-radius: 10px;">
+    </div>
+    <div class="moviecard_info">
+        {{Movie.titleText.text | nametranslate}}({{Movie.releaseYear.year}})
+        <br>
+        <br>
+        {{Movie.titleType.text}}
+    </div>
+</div>

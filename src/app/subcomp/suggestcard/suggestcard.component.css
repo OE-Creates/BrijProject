@@ -1,0 +1,17 @@
+.suggestcard{
+    background-color: #203354;
+    min-width: 200px;
+    height: 100%;
+    margin-left: 5px;
+    margin-right: 5px;
+    border-radius: 10px;
+}
+
+.suggestcard img {
+    max-width: 100%;
+}
+
+.suggestcard_info{
+    padding: 5px;
+    color: aliceblue;
+}

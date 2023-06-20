@@ -1,0 +1,86 @@
+<div id="dashboard_component">
+    <div id="top_banner">
+        <div id="logout_button">
+            <input id="logout_button" type="button" value="LOGOUT" (click)="logOut()">
+        </div>
+        <div id="username_area">
+            <h3>{{userName}}</h3>
+        </div>
+    </div>
+
+    <div id="upcoming_movies">
+        <h4>Upcoming Movies</h4>
+        <div id="new_card_container">
+            <div *ngFor="let Movie of upcomingMovieList">
+                <app-moviecard [Movie]="Movie"></app-moviecard>
+            </div>
+        </div>
+    </div>
+
+    <div id="movie_search">
+        <h4>Movie Search</h4>
+        <div id="movie_search_box">
+            <form>
+                <input id="movie_search_input" type="text" name="search" [(ngModel)]="search" (keyup)="fetchSearchData()">
+            </form>
+        </div>
+        <div id="result_card_container">
+            <div *ngFor="let Search of searchedMovieList">
+                <app-searchcard [Search]="Search"></app-searchcard>
+            </div>
+        </div>
+    </div>
+
+    <div id="movie_suggest">
+        <h4>Movie Suggestions</h4>
+        <form>
+            <div class="movie_suggest_section">
+                <div class="suggest_left">
+                    <h5>Suggestion Type</h5>
+                </div>
+                <div class="suggest_right">
+                    <select name="choice" [(ngModel)]="choice" required>
+                        <option selected value="Suggest New">Suggest New</option>
+                        <option value="Recommend Part Two">Recommend Part Two</option>
+                    </select>
+                </div>
+            </div>
+            <div class="movie_suggest_section">
+                <div class="suggest_left">
+                    <h5>Suggestion Reason</h5>
+                </div>
+                <div class="suggest_right">
+                    <textarea rows="5" name="reason" minlength="5" maxlength="255" placeholder="Enter a reason for your suggestion" [(ngModel)]="reason" required></textarea>
+                </div>
+            </div>
+            <div class="movie_suggest_section">
+                <div class="suggest_left">
+                    <h5>Suggestion Image</h5>
+                </div>
+                <div class="suggest_right">
+                    <textarea rows="1" name="imgurl" placeholder="Enter the URL of a hosted image" [(ngModel)]="image"></textarea>
+                </div>
+            </div>
+            <input id="submit_button" type="button" value="SUBMIT" (click)="storeSuggestion()">
+        </form>
+    </div>
+
+    <div id="suggest_submit">
+        <div id="suggest_header">
+            <h4>Suggestion Submissions</h4>
+            <div id="suggestion_refresh_button">
+                <input id="refresh_button" type="button" value="REFRESH" (click)="displaySuggestions()">
+            </div>
+            
+        </div>
+        <div id="suggestions_container">
+            <div *ngFor="let entry of suggestionArray">
+                <app-suggestcard [Entry]="entry"></app-suggestcard>
+            </div>
+        </div>
+    </div>
+
+    <div id="bottom_banner">
+        <sub style="font-size: .7em;">Created by: Osawaru Edokpolo</sub>
+    </div>
+</div>

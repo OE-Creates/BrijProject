@@ -1,0 +1,33 @@
+<div id="login_component">
+    <div id="login_page">
+        <div class="content_box" id="login_image">
+            <img src="../../../assets/loginposter.jpg" alt="">
+        </div>
+        <div class="content_box" id="login_form">
+            <div id="login_box">
+                <div id="login_header">
+                    <h1 style="text-align: center; color: aliceblue;">Brij Movie App</h1><br>
+                    <h3 style="text-align: center;">LOGIN</h3>
+                </div>
+                <form>
+                    <div class="data_input">
+                        <label for="input_email">Email</label>
+                        <input id="input_email" type="text" name="username" placeholder="email.address@example.com" [(ngModel)]="username">
+                    </div>
+                    <div class="data_input">
+                        <label for="input_password">Password</label>
+                        <input id="input_password" type="password" name="password" [(ngModel)]="password">
+                    </div>
+                    <div class="data_input" id="extra">
+                        <div id="remember_me">
+                            <input type="checkbox" name="rememberme"> Remember Me
+                        </div>
+                        <a routerLink="/" style="font-size: .8em;">Forgot Password</a>
+                    </div>
+                    <input id="login_button" type="button" value="LOG IN" (click)="verifyCredentials()">
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+

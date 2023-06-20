@@ -1,0 +1,126 @@
+#login_component {
+    width: 100vw;
+    background-color: #203354;
+}
+
+#login_page {
+    display: flex;
+    flex-direction: row;
+    overflow-y: hidden;
+    height: 100vh;
+}
+
+[type="button"] {
+    align-items: center;
+    background-color: #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: .25rem;
+    box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+    box-sizing: border-box;
+    color: rgba(0, 0, 0, 0.85);
+    cursor: pointer;
+    display: inline-flex;
+    font-family: system-ui,-apple-system,system-ui,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    justify-content: center;
+    line-height: 1.25;
+    margin: 0;
+    min-height: 1rem;
+    padding: calc(.475rem - 1px) calc(0.75rem - 1px);
+    position: relative;
+    text-decoration: none;
+    transition: all 250ms;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    vertical-align: baseline;
+    width: auto;
+  }
+  
+  [type="button"]:hover,
+  [type="button"]:focus {
+    border-color: rgba(0, 0, 0, 0.15);
+    box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+    color: rgba(0, 0, 0, 0.65);
+  }
+  
+  [type="button"]:hover {
+    transform: translateY(-1px);
+  }
+  
+  [type="button"]:active {
+    background-color: #F0F0F1;
+    border-color: rgba(0, 0, 0, 0.15);
+    box-shadow: rgba(0, 0, 0, 0.06) 0 2px 4px;
+    color: rgba(0, 0, 0, 0.65);
+    transform: translateY(0);
+  }
+
+@media only screen and (max-width: 1020px) {
+    #login_image {
+        display: none;
+    }
+
+    #login_form {
+        width: 100%;
+    }
+}
+
+.content_box {
+    width: 50%;
+}
+
+.content_box form {
+    width: 100%;
+}
+
+.content_box img {
+    width: 100%;
+}
+
+#login_header {
+    margin-bottom: 30px;
+}
+
+#login_box {
+    width: 300px;
+    margin:auto;
+    margin-top: 10vh;
+    background-color: slategrey;
+    border-radius: 10px;
+    padding: 25px;
+}
+
+.data_input {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#extra {
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+#input_email {
+    border-radius: 5px;
+    padding-left: 5px;
+    width:68%;
+    height: 2em;
+}
+
+#input_password {
+    border-radius: 5px;
+    padding-left: 5px;
+    width:68%;
+    height: 2em;
+}
+
+#login_button {
+    width: 100%;
+}

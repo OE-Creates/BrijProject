@@ -1,0 +1,206 @@
+#dashboard_component {
+    width: 100vw;
+    background-color: #203354;
+}
+
+h4{
+    font-size: large;
+    color: aliceblue;
+    padding-bottom: 15px;
+}
+
+#top_banner {
+    padding: 10px;
+    width: 100%;
+    margin: auto;
+
+    background-color: lightslategrey;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#username_area {
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: 25px;
+}
+
+[type="button"] {
+  align-items: center;
+  background-color: #FFFFFF;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: .25rem;
+  box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+  box-sizing: border-box;
+  color: rgba(0, 0, 0, 0.85);
+  cursor: pointer;
+  display: inline-flex;
+  font-family: system-ui,-apple-system,system-ui,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  justify-content: center;
+  line-height: 1.25;
+  margin: 0;
+  min-height: 1rem;
+  padding: calc(.475rem - 1px) calc(0.75rem - 1px);
+  position: relative;
+  text-decoration: none;
+  transition: all 250ms;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: baseline;
+  width: auto;
+}
+
+[type="button"]:hover,
+[type="button"]:focus {
+  border-color: rgba(0, 0, 0, 0.15);
+  box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+  color: rgba(0, 0, 0, 0.65);
+}
+
+[type="button"]:hover {
+  transform: translateY(-1px);
+}
+
+[type="button"]:active {
+  background-color: #F0F0F1;
+  border-color: rgba(0, 0, 0, 0.15);
+  box-shadow: rgba(0, 0, 0, 0.06) 0 2px 4px;
+  color: rgba(0, 0, 0, 0.65);
+  transform: translateY(0);
+}
+
+#upcoming_movies {
+    padding: 10px;
+    width: 100%;
+    margin: auto;
+}
+
+#new_card_container {
+    display: flex;
+    flex-direction: row;
+    overflow-x: auto;
+    align-items: stretch;
+    width: calc(100% - 25px);
+}
+
+#movie_search {
+    padding: 10px;
+    width: 100%;
+    margin: auto;
+
+    background-color: lightslategrey;
+
+}
+
+#movie_search_box {
+    width: calc(100% - 40px);
+}
+
+#movie_search_box input {
+    padding-left: 5px;
+    padding-right: 5px;
+    border-radius: 5px;
+    height: 2em;
+    width: 100%;
+}
+
+#result_card_container {
+    display: flex;
+    flex-direction: row;
+    overflow-x: auto;
+    align-items: stretch;
+    margin-top: 25px;
+    width: calc(100% - 25px);
+}
+
+#movie_suggest {
+    padding: 10px;
+    width: 100%;
+    margin: auto;
+}
+
+#movie_suggest form {
+    width: calc(100% - 30px);
+}
+
+.movie_suggest_section {
+    display: flex;
+    flex-direction: row;
+}
+
+.suggest_left {
+    width: 150px;
+    color: aliceblue;
+    font-size: 1em;
+}
+
+.suggest_right {
+    width: calc(100% - 150px);
+}
+
+#movie_suggest select,
+#movie_suggest textarea {
+    border-radius: 5px;
+    width: 100%;
+}
+
+#movie_suggest select {
+    height: 2.5em;
+    margin-bottom: 5px;
+}
+
+#movie_suggest select option {
+    font-size: 1.5em;
+}
+
+#movie_suggest textarea {
+    font-size: 1em;
+}
+
+#suggest_submit {
+    padding: 10px;
+    width: 100%;
+    margin: auto;
+
+    background-color: lightslategrey;
+}
+
+#suggest_header {
+    width: 100%;
+    margin: auto;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#suggest_header h4 {
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+#suggestion_refresh_button {
+    margin-right: 25px;
+}
+
+#suggestions_container {
+    display: flex;
+    flex-direction: row;
+    overflow-x: auto;
+    align-items: stretch;
+    margin-top: 25px;
+    width: calc(100% - 25px);
+}
+
+#bottom_banner {
+    padding: 10px;
+    width: 100%;
+    margin: auto;
+    color: aliceblue;
+    text-align: center;
+}
